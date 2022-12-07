@@ -53,7 +53,8 @@
     font-weight: 500;
 }
 
-.grey-infoblock__descr p a {
+.grey-infoblock__descr p a,
+.grey-infoblock__descr p span {
     text-decoration: none;
     color: #495A96;
     display: inline-block;
@@ -212,9 +213,48 @@
 .about-velues .aboutbgimg {
     position: absolute;
     right: 55px;
-    top: 0;
-    transform: translateY(-50%);
+    top: -120px;
+    
 }
+/* 
+.abmissoinboxwrap .ableaf2,
+.abmissoinboxwrap .ableaf1 {
+    animation: leafimg 6s infinite;
+    -webkit-animation: leafimg 6s infinite;
+    animation-delay:0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes leafimg {
+
+    0% {
+       transform: rotate(0);
+    }
+    50% {
+      transform:  rotate(-10deg);
+    }
+    100% {
+       transform: rotate(0);
+    }
+} 
+
+.about-velues .aboutbgimg {
+    animation: abrotate 10s infinite;
+    -webkit-animation: abrotate 10s infinite;
+    animation-delay:0.5s;
+    animation-timing-function: linear;
+}
+@keyframes abrotate {
+
+    0% {
+       transform: rotate(0);
+    }
+   
+    100% {
+        transform:  rotate(-360deg);
+    }
+}  */
+
 
 @media(max-width:1200.8px) {
     .aboutbb {
