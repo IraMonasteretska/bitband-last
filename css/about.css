@@ -26,11 +26,30 @@
 }
 
 .aboutmainpic {
-    padding-left: 40px;
+    /* padding-left: 40px; */
+    padding-left: 0;
 }
 
 .aboutmainpic img {
-    width: calc(100% + 65px);
+    /* width: calc(100% + 65px); */
+    width: calc(100% + 125px);
+}
+
+/* new */
+.aboutbb__infoblockdescr {
+    max-width: 495px;
+}
+
+.aboutbb__infoblockdescr p {
+    color: #000000;
+    font-size: 28px;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.aboutbb__infoblockdescr p span {
+    color: #495A96;
+    display: inline-block;
 }
 
 /* greyy block 1 */
@@ -214,8 +233,9 @@
     position: absolute;
     right: 55px;
     top: -120px;
-    
+
 }
+
 /* 
 .abmissoinboxwrap .ableaf2,
 .abmissoinboxwrap .ableaf1 {
@@ -255,6 +275,122 @@
     }
 }  */
 
+/* manifesto */
+.manifesto {
+    padding: 36px 0 90px;
+    background: #E7EBF0;
+}
+
+.manifesto__circlogo {
+    margin: 0 auto 24px;
+    width: 152px;
+    display: block;
+}
+
+.manifesto__textbox {
+    position: relative;
+    max-width: 1016px;
+    margin: 0 auto;
+}
+
+.manifesto__textboxwr {
+    position: relative;
+    z-index: 8;
+    min-height: 383px;
+    background: url('../img/about/bgtextbox.png') no-repeat center / 100% 100%;
+    padding: 60px 87px 59px;
+    text-align: center;
+}
+
+.manifesto__textbox .title {
+    margin-bottom: 25px;
+    color: #000;
+    font-size: 55px;
+    line-height: 120%;
+    font-weight: 500;
+}
+
+.manifesto__textbox .descr p {
+    color: #000;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.manifesto__textbox .descr p:last-child {
+    margin-bottom: 0;
+}
+
+.manifesto-absimg1 {
+    position: absolute;
+    right: 59px;
+    top: 29px;
+    z-index: 9;
+}
+
+.manifesto-absimg2 {
+    position: absolute;
+    right: -120px;
+    top: -20px;
+}
+
+.manifesto-absimg3 {
+    position: absolute;
+    right: -100px;
+    bottom: -20px;
+}
+
+.manifesto-absimg4 {
+    position: absolute;
+    left: 50px;
+    bottom: -28px;
+    z-index: 9;
+}
+
+.manifesto-absimg5 {
+    position: absolute;
+    left: -100px;
+    bottom: -20px;
+}
+
+.manifesto-absimg6 {
+    position: absolute;
+    right: -240px;
+    bottom: 20px;
+}
+
+.manifesto-absimg7 {
+    position: absolute;
+    left: -240px;
+    bottom: 60px;
+}
+
+
+
+
+
+@media(max-width:1600.8px) {
+
+    .manifesto__textbox {
+        max-width: 900px;
+    }
+
+    .manifesto-absimg5 {
+        bottom: 0;
+    }
+}
+
+@media(max-width:1400.8px) {
+
+    .manifesto-absimg6,
+    .manifesto-absimg7 {
+        display: none;
+    }
+
+    .manifesto-absimg2 {
+        right: -90px;
+    }
+
+}
 
 @media(max-width:1200.8px) {
     .aboutbb {
@@ -362,6 +498,13 @@
         font-size: 16px;
     }
 
+    .manifesto__textbox .title {
+        font-size: 38px;
+    }
+
+    .manifesto__textbox .descr p {
+        font-size: 16px;
+    }
 }
 
 @media(max-width:991.8px) {
@@ -370,7 +513,7 @@
     }
 
     .aboutbb {
-        padding: 40px 0 90px 0;
+        padding: 80px 0 50px 0;
     }
 
     .aboutbb__infoblock h1 {
@@ -480,6 +623,22 @@
 
     .abcalbox {
         margin-bottom: 60px;
+    }
+
+    .manifesto-absimg1,
+    .manifesto-absimg2,
+    .manifesto-absimg5 {
+        display: none;
+    }
+
+    .manifesto-absimg4 {
+        left: 20px;
+    }
+
+    .aboutbb__infoblock,
+    .aboutbb__infoblockdescr {
+        max-width: 100%;
+        text-align: center;
     }
 
 
@@ -596,5 +755,62 @@
         padding-bottom: 40px;
     }
 
+    .manifesto__textboxwr {
+        background-image: none;
+        background: #fff;
+        border-radius: 20px;
+    }
 
+    .manifesto-absimg4 {
+        left: 0px;
+    }
+
+    .manifesto__circlogo {
+        width: 100px;
+    }
+
+    .manifesto__textbox .title {
+        font-size: 32px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .manifesto__textboxwr {
+        padding: 30px;
+    }
+
+    .manifesto__textbox .title {
+        font-size: 28px;
+    }
+
+    .manifesto-absimg3 {
+        display: none;
+    }
+
+    .manifesto-absimg4 {
+        bottom: -30px;
+        width: 60px;
+        left: 20px;
+    }
+
+    .aboutbb__infoblockdescr p {
+        font-size: 21px;
+    }
+
+    .aboutbb {
+        padding-top: 50px;
+    }
+
+    .aboutbb__infoblock h1 {
+        margin-bottom: 15px;
+    }
+
+    .aboutmainpic {
+        margin-top: 30px;
+    }
+
+    .manifesto {
+        padding-bottom: 60px;
+    }
 }
