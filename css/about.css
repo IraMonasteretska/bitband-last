@@ -1,6 +1,6 @@
 /* About BitBand */
 .aboutbb {
-    padding: 85px 0 150px;
+    padding: 30px 0;
 }
 
 .aboutbb__infoblock {
@@ -31,8 +31,7 @@
 }
 
 .aboutmainpic img {
-    /* width: calc(100% + 65px); */
-    width: calc(100% + 125px);
+    width: 100%;
 }
 
 /* new */
@@ -277,7 +276,7 @@
 
 /* manifesto */
 .manifesto {
-    padding: 36px 0 90px;
+    padding: 90px 0 120px;
     background: #E7EBF0;
 }
 
@@ -312,7 +311,7 @@
 
 .manifesto__textbox .descr p {
     color: #000;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 150%;
 }
 
@@ -349,7 +348,7 @@
 .manifesto-absimg5 {
     position: absolute;
     left: -100px;
-    bottom: -20px;
+    top: -50px;
 }
 
 .manifesto-absimg6 {
@@ -360,11 +359,15 @@
 
 .manifesto-absimg7 {
     position: absolute;
-    left: -240px;
+    left: -260px;
     bottom: 60px;
 }
 
-
+.manifesto-absimg8 {
+    position: absolute;
+    left: -60px;
+    bottom: -40px;
+}
 
 
 
@@ -390,6 +393,9 @@
         right: -90px;
     }
 
+    .manifesto {
+        padding: 60px 0 80px;
+    }
 }
 
 @media(max-width:1200.8px) {
@@ -795,11 +801,11 @@
     }
 
     .aboutbb__infoblockdescr p {
-        font-size: 21px;
+        font-size: 18px;
     }
 
     .aboutbb {
-        padding-top: 50px;
+       padding: 40px 0 30px;
     }
 
     .aboutbb__infoblock h1 {
@@ -813,4 +819,29 @@
     .manifesto {
         padding-bottom: 60px;
     }
+
+    .manifesto-absimg8 {
+        display: none;
+    }
+
+    .manifesto {
+        padding-top: 40px;
+    }
+
+    .manifesto-absimg2 {
+        display: inline-block;
+        right: 10px;
+        top: -40px;
+        width: 60px;
+    }
+
+    .manifesto-absimg3 {
+        display: inline-block;
+        width: 80px;
+        right: 0;
+        bottom: -50px;
+        transform: rotate(65deg);
+    }
+
+   
 }
